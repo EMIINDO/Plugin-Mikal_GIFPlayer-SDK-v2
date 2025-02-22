@@ -1,0 +1,153 @@
+{
+  "gif": {
+    "conditions": [
+      {
+        "id": "paused",
+        "scriptName": "Paused",
+        "highlight": false
+      },
+      {
+        "id": "loading",
+        "scriptName": "Loading",
+        "highlight": false
+      },
+      {
+        "id": "playing",
+        "scriptName": "Playing",
+        "highlight": false
+      },
+      {
+        "id": "on-error",
+        "scriptName": "OnError",
+        "highlight": false,
+        "isTrigger": true,
+        "isInvertible": false
+      },
+      {
+        "id": "on-load",
+        "scriptName": "OnLoad",
+        "highlight": false,
+        "isTrigger": true,
+        "isInvertible": false
+      },
+      {
+        "id": "loaded",
+        "scriptName": "Loaded",
+        "highlight": false
+      }
+    ],
+    "actions": [
+      {
+        "id": "load-file",
+        "scriptName": "LoadFile",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "filename",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "play",
+        "scriptName": "Play",
+        "highlight": false
+      },
+      {
+        "id": "pause",
+        "scriptName": "Pause",
+        "highlight": false
+      },
+      {
+        "id": "load-url",
+        "scriptName": "LoadUrl",
+        "highlight": false,
+        "params": [
+          {
+            "id": "uri",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "seek",
+        "scriptName": "Seek",
+        "highlight": false,
+        "params": [
+          {
+            "id": "time",
+            "type": "number",
+            "initialValue": "0"
+          }
+        ]
+      },
+      {
+        "id": "seek-frame",
+        "scriptName": "SeekFrame",
+        "highlight": false,
+        "params": [
+          {
+            "id": "frame-index",
+            "type": "number",
+            "initialValue": "0"
+          }
+        ]
+      },
+      {
+        "id": "set-speed",
+        "scriptName": "SetSpeed",
+        "highlight": false,
+        "params": [
+          {
+            "id": "speed",
+            "type": "number",
+            "initialValue": "1"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "id": "duration",
+        "expressionName": "Duration",
+        "returnType": "number"
+      },
+      {
+        "id": "frame-count",
+        "expressionName": "FrameCount",
+        "returnType": "number"
+      },
+      {
+        "id": "current-time",
+        "expressionName": "CurrentTime",
+        "returnType": "number"
+      },
+      {
+        "id": "current-frame",
+        "expressionName": "CurrentFrame",
+        "returnType": "number"
+      },
+      {
+        "id": "play-speed",
+        "expressionName": "PlaySpeed",
+        "returnType": "number"
+      },
+      {
+        "id": "error-message",
+        "expressionName": "ErrorMessage",
+        "returnType": "string"
+      },
+      {
+        "id": "gif-width",
+        "expressionName": "GIFWidth",
+        "returnType": "number"
+      },
+      {
+        "id": "gif-height",
+        "expressionName": "GIFHeight",
+        "returnType": "number"
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for GIFPlayer Plugin",
+  "text": {
+    "plugins": {
+      "mikal_gifplayer": {
+        "name": "GIFPlayer",
+        "description": "GIF Player",
+        "help-url": "https://github.com/armandoalonso/c3IDE",
+        "properties": {
+          "edit-image": {
+            "name": "property name",
+            "desc": "property desc",
+            "link-text": "link text"
+          }
+        },
+        "aceCategories": {
+          "gif": "GIF"
+        },
+        "conditions": {
+          "paused": {
+            "list-name": "Is paused",
+            "display-text": "Is paused",
+            "description": "True if paused."
+          },
+          "loading": {
+            "list-name": "Is loading",
+            "display-text": "Is loading",
+            "description": "True if GIF is loading."
+          },
+          "playing": {
+            "list-name": "Is playing",
+            "display-text": "Is playing",
+            "description": "True if playing (not paused.)"
+          },
+          "on-error": {
+            "list-name": "On Error",
+            "display-text": "On error",
+            "description": "Called if there is an error during loading and decoding."
+          },
+          "on-load": {
+            "list-name": "On load",
+            "display-text": "On load",
+            "description": "Trigger when GIF is loaded and ready to play."
+          },
+          "loaded": {
+            "list-name": "Is loaded",
+            "display-text": "Is loaded",
+            "description": "True if GIF has been loaded."
+          }
+        },
+        "actions": {
+          "load-file": {
+            "list-name": "Load File",
+            "display-text": "Load File {0}",
+            "description": "Load and initialize GIF from a Project File",
+            "params": {
+              "filename": {
+                "name": "Filename",
+                "desc": "Project filename"
+              }
+            }
+          },
+          "play": {
+            "list-name": "Play",
+            "display-text": "Play",
+            "description": "Play GIF ater loaded."
+          },
+          "pause": {
+            "list-name": "Pause",
+            "display-text": "Pause",
+            "description": "Pause GIF after loaded."
+          },
+          "load-url": {
+            "list-name": "Load URL",
+            "display-text": "Load URL {0}",
+            "description": "Load GIF from URL",
+            "params": {
+              "uri": {
+                "name": "Uri",
+                "desc": "URL of GIF (server must have CORS)"
+              }
+            }
+          },
+          "seek": {
+            "list-name": "Seek",
+            "display-text": "Seek {0}",
+            "description": "Move gif playback to time. Time is in ms.",
+            "params": {
+              "time": {
+                "name": "Time",
+                "desc": "Time (ms)"
+              }
+            }
+          },
+          "seek-frame": {
+            "list-name": "Seek Frame",
+            "display-text": "Seek frame {0}",
+            "description": "Move gif playback to frameIndex. First frame is 0",
+            "params": {
+              "frame-index": {
+                "name": "Frame Index",
+                "desc": "Frame Index (first frame is 0.)"
+              }
+            }
+          },
+          "set-speed": {
+            "list-name": "Set Speed",
+            "display-text": "Set speed {0}",
+            "description": "Sets the current playback speed. Set to zero pauses playback. Negative numbers play backward. 0.5 is half speed. 2 is double speed.",
+            "params": {
+              "speed": {
+                "name": "Speed",
+                "desc": "Speed"
+              }
+            }
+          }
+        },
+        "expressions": {
+          "duration": {
+            "translated-name": "Duration",
+            "description": "The play length of the gif in ms"
+          },
+          "frame-count": {
+            "translated-name": "FrameCount",
+            "description": "The total number of frames."
+          },
+          "current-time": {
+            "translated-name": "CurrentTime",
+            "description": "The current time (ms). This is time at the start of displaying the current frame."
+          },
+          "current-frame": {
+            "translated-name": "CurrentFrame",
+            "description": "The current frame index"
+          },
+          "play-speed": {
+            "translated-name": "PlaySpeed",
+            "description": "The current play speed."
+          },
+          "error-message": {
+            "translated-name": "ErrorMessage",
+            "description": "Error message during loading."
+          },
+          "gif-width": {
+            "translated-name": "GIFWidth",
+            "description": "Width of source GIF."
+          },
+          "gif-height": {
+            "translated-name": "GIFHeight",
+            "description": "Height of source GIF."
+          }
+        }
+      }
+    }
+  }
+}
